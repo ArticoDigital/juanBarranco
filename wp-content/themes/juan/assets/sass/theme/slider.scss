@@ -1,5 +1,4 @@
 .SliderIndex{
-  background: #fff;
   height: calc(100vh - 150px);
   max-height: 500px;
   overflow: hidden;
@@ -92,3 +91,14 @@
     }
   }
 }
+
+.swiper-wrapper {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+}
+
+

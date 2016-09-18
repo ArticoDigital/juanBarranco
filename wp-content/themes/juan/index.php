@@ -67,7 +67,7 @@
             pagination: '.Circles-container',
             nextButton: '.Arrow--next',
             prevButton: '.Arrow--prev',
-            paginationClickable: true,
+            paginationClickable: true
         })
     });
 </script>

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/normalize.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css">
 
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">-->
+
     <?php wp_head(); ?>
 
 </head>
