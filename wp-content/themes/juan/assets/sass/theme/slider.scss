@@ -1,6 +1,7 @@
 .SliderIndex{
   background: #fff;
   height: calc(100vh - 150px);
+  max-height: 500px;
   overflow: hidden;
   position: relative;
   .Item{
@@ -29,7 +30,9 @@
     background: rgba(0,0,0,.4);
     cursor: pointer;
     position: absolute;
+    z-index: 10;
     top: 50%;
+    margin-top: rem(-30);
     opacity: .6;
     border-radius: 50% 0 0 50%;
     display: flex;
@@ -55,6 +58,7 @@
 
 .Slider-circles{
   position: absolute;
+  z-index: 10;
   bottom: 0;
   height: rem(25);
   width: 100%;
@@ -71,7 +75,7 @@
     align-items: center;
   }
 
-  .Item{
+  .swiper-pagination-bullet{
     width: rem(15);
     height: rem(15);
     background: #fff;
@@ -82,8 +86,9 @@
     &:last-child{
       margin-right: 0;
     }
-    &.active{
+    &.swiper-pagination-bullet-active{
       border: 2px solid #000;
+      cursor: default;
     }
   }
 }

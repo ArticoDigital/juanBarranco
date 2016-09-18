@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <section class="SliderIndex">
-    <section class="Slider-images" style="width:400%">
-        <article class="Item" style="width:25%">
+    <section class="Slider-images swiper-wrapper">
+        <article class="Item swiper-slide">
             <blockquote class="row middle color-darkBlue">
                 <p>
                     SERVICIOS Y SOLUCIONES <br>
@@ -12,7 +12,7 @@
             </blockquote>
             <img src="<?php bloginfo('template_url') ?>/assets/slider1/slider_01.jpg" alt="">
         </article>
-        <article class="Item" style="width:25%">
+        <article class="Item swiper-slide">
             <blockquote class="row middle color-darkBlue">
                 <p>
                     SERVICIOS Y SOLUCIONES <br>
@@ -23,7 +23,7 @@
             </blockquote>
             <img src="<?php bloginfo('template_url') ?>/assets/slider1/slider_01.jpg" alt="">
         </article>
-        <article class="Item" style="width:25%">
+        <article class="Item swiper-slide">
             <blockquote class="row middle color-darkBlue">
                 <p>
                     SERVICIOS Y SOLUCIONES <br>
@@ -34,7 +34,7 @@
             </blockquote>
             <img src="<?php bloginfo('template_url') ?>/assets/slider1/slider_01.jpg" alt="">
         </article>
-        <article class="Item" style="width:25%">
+        <article class="Item swiper-slide">
             <blockquote class="row middle color-darkBlue">
                 <p>
                     SERVICIOS Y SOLUCIONES <br>
@@ -55,12 +55,19 @@
         </span>
     </div>
     <div class="Slider-circles">
-        <div class="Circles-container">
-            <span class="Item active"></span>
-            <span class="Item"></span>
-            <span class="Item"></span>
-            <span class="Item"></span>
-        </div>
+        <div class="Circles-container"></div>
     </div>
 </section>
 <?php get_footer(); ?>
+<script>
+    $(document).ready(function () {
+        var mySwiper = new Swiper ('.SliderIndex', {
+            loop: true,
+            direction: 'horizontal',
+            pagination: '.Circles-container',
+            nextButton: '.Arrow--next',
+            prevButton: '.Arrow--prev',
+            paginationClickable: true,
+        })
+    });
+</script>
