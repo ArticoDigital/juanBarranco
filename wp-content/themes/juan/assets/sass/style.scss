@@ -10,17 +10,9 @@ body {
   padding: 0 1rem;
 }
 
-.Header {
-
-  figure {
-    max-width: rem(600);
-    margin: auto;
-    padding: rem(40);
-  }
-
-}
-
 main {
   margin: auto;
   max-width: $maxWidth;
 }
+
+@import "theme/header";
