@@ -1,0 +1,21 @@
+.SliderIndex{
+  background: #fff;
+  height: calc(100vh - 150px);
+  position: relative;
+  blockquote{
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    font-size: rem(24);
+    text-align: justify;
+    sup{
+      font-size: .6rem;
+    }
+    .big-text{
+      font-size: rem(44);
+    }
+    .small-text{
+      font-size: rem(20);
+    }
+  }
+}

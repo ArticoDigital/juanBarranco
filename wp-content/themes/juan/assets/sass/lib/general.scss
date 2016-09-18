@@ -1,11 +1,60 @@
-a{text-decoration: none}
-body, html {font-weight: 100 ;height: 100%}
-body{  font-size: 16px ;  font-family: 'Titillium Web';}
-*:focus {outline: 0}
-li{ list-style: none}
-img{max-width: 100%; height: auto; display: block}
-h1, h2, h3, ul { margin: 0;  padding: 0}
-*{-webkit-box-sizing: border-box  ;-moz-box-sizing: border-box;box-sizing: border-box}
-figure {margin: 0}
-main{margin: auto;width: 100%;position: relative; }
-button{background: none;border: none}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 0
+}
+
+body,
+html {
+  font-weight: 100;
+  font-size: 16px;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+}
+
+body{
+  background: radial-gradient(ellipse at center, $gray 1%, #cccccc 100%);
+}
+
+a{
+  color: $dark-blue;
+  text-decoration: none
+}
+
+li{
+  list-style: none
+}
+
+img{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0
+}
+
+figure,
+blockquote,
+blockquote p {
+  margin: 0
+}
+
+main{
+  margin: auto;
+  max-width: $max-width;
+  width: 100%;
+  position: relative;
+}
+
+button{
+  background: none;
+  border: none
+}

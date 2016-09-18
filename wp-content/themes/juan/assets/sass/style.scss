@@ -1,18 +1,17 @@
+$max-width: 75rem;
+
+//Paleta de colores =
+
+$dark-blue : #2a4954;
+$gray : #e5e5e5;
+$white : #fff;
+
+
 @import "lib/settings";
 @import "lib/fonts";
 @import "lib/general";
 @import "lib/grid";
-
-$maxWidth: 75rem;
-
-body {
-  background: radial-gradient(ellipse at center, #e5e5e5 1%, #cccccc 100%);
-  padding: 0 1rem;
-}
-
-main {
-  margin: auto;
-  max-width: $maxWidth;
-}
+@import "lib/utilities";
 
 @import "theme/header";
+@import "theme/slider";

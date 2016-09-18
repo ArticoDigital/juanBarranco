@@ -1,9 +1,13 @@
 .Header {
-
+  padding: 0 1rem;
+  height: rem(150);
   figure {
     max-width: rem(600);
     margin: auto;
-    padding: rem(40);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 rem(40);
   }
 
 }
