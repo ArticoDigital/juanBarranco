@@ -1,0 +1,16 @@
+@import "lib/settings";
+@import "lib/fonts";
+@import "lib/general";
+@import "lib/grid";
+
+$maxWidth: 75rem;
+
+body {
+  background: #E0E6EE;
+  padding: 0 1rem;
+}
+
+main {
+  margin: auto;
+  max-width: $maxWidth;
+}

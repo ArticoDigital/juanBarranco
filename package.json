@@ -1,0 +1,31 @@
+{
+  "name": "JuanBarranco",
+  "version": "0.0.0",
+  "description": "JuanBarranco",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArticoDigital/juanBarranco.git"
+  },
+  "keywords": [
+    "ferias"
+  ],
+  "author": "Ártico",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArticoDigital/juanBarranco/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^3.1.1"
+  }
+}

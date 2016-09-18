@@ -3,3 +3,4 @@ wp-content/uploads
 wp-content/upload
 .DS_Store
 wp-config.php
+node_modules
