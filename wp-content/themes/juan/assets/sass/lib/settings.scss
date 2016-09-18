@@ -1,3 +1,9 @@
+$browser-context: 16;
+
+@function rem($pixels, $context: $browser-context){
+  @return #{$pixels/$context}rem
+}
+
 @mixin respond-to($breakpoint){
   @if $breakpoint == "small"{
     @media (min-width: 36rem){

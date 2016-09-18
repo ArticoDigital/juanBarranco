@@ -20,10 +20,11 @@
 
 <body <?php body_class(); ?> data-urlBody="<?php bloginfo('url') ?>">
 <header class="Header">
-
+    <figure>
+        <img src=" <?php bloginfo('template_url') ?>/assets/images/logo-juanBarranco.svg" alt="">
+    </figure>
 </header>
-
-<?php wp_nav_menu(array('theme_location' => 'menuHeader', 'container' => 'nav')) ?>
+<?php /*wp_nav_menu(array('theme_location' => 'menuHeader', 'container' => 'nav')) */?>
 
 <main>
 

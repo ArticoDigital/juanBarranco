@@ -6,16 +6,21 @@
 $maxWidth: 75rem;
 
 body {
-  background: #E0E6EE;
+  background: radial-gradient(ellipse at center, #e5e5e5 1%, #cccccc 100%);
   padding: 0 1rem;
+}
+
+.Header {
+
+  figure {
+    max-width: rem(600);
+    margin: auto;
+    padding: rem(40);
+  }
+
 }
 
 main {
   margin: auto;
   max-width: $maxWidth;
-}
-
-.prueba{
-  display: flex;
-  justify-content: center;
 }
