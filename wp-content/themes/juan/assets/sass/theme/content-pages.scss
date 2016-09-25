@@ -1,0 +1,38 @@
+.Nav-sidebar {
+  border: rem(1) solid white;
+  border-bottom: none;
+  li {
+    &:last-child {
+      border-bottom: rem(1) solid white;
+    }
+    &.current_page_item{
+      background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
+      a{
+        color:black;
+      }
+    }
+    a {
+      color: white;
+      display: block;
+      padding: rem(8) rem(14);
+      font-size: rem(14);
+
+    }
+  }
+}
+
+.Content-page {
+  h4 {
+    font-size: rem(30);
+    font-weight: 400;
+    margin: rem(60) auto rem(20);
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+}
+
+.Entry-content {
+  background: white;
+  padding: rem(25);
+}

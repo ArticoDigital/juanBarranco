@@ -26,8 +26,9 @@
         <img src=" <?php bloginfo('template_url') ?>/assets/images/logo-juanBarranco.svg" alt="">
     </figure>
 </header>
-<?php /*wp_nav_menu(array('theme_location' => 'menuHeader', 'container' => 'nav')) */?>
-
+<div class="content-menu center">
+    <?php wp_nav_menu(array('theme_location' => 'menuHeader', 'container' => 'nav')) ?>
+</div>
 <main>
 
 

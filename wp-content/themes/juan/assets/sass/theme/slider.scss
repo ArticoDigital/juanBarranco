@@ -1,8 +1,10 @@
 .SliderIndex{
+  max-width: $max-width;
   height: calc(100vh - 150px);
   max-height: 500px;
   overflow: hidden;
   position: relative;
+  margin: auto;
   .Item{
     float: left;
     position: relative;

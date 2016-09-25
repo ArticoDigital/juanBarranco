@@ -146,6 +146,9 @@ $totalContainer: 100%;
   -webkit-box-pack: justify;
   justify-content: space-between;
 }
+.stretch{
+  align-items: stretch;
+}
 
 .first {
   -webkit-order: -1;

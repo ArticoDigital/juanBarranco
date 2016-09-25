@@ -11,3 +11,59 @@
   }
 
 }
+.content-menu{
+  background: linear-gradient(to right, #385b7c 0%,#5992cd 50%,#385b7c 100%);
+  box-shadow: 0 rem(3) rem(6) rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 100;
+  a{
+    color: white;
+    font-size: rem(11);
+    padding: rem(16) 0 rem(14)  ;
+    display: block;
+  }
+  li{
+    display: inline-block;
+    margin-right: rem(30);
+    position: relative;
+    &:hover .sub-menu{
+      display: block;
+    }
+  }
+}
+.menu{
+  max-width: $max-width;
+  margin: auto;
+
+}
+.Header-service{
+  background: white;
+}
+.Header-serviceContent{
+  max-width: $max-width;
+  margin: auto;
+  h1{
+    color: #395B7D;
+    span{
+      display: block;
+    }
+  }
+  figure img{
+    max-width: rem(350);
+  }
+}
+
+.sub-menu{
+  display: none;
+  position: absolute;
+  top:rem(42);
+  li{
+    width: rem(168);
+    background: linear-gradient(to bottom, #ffffff 0%,#cccccc 100%);
+  }
+  a{
+    color: black;
+    padding: rem(12) rem(7);
+    display: block
+  }
+}

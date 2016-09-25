@@ -32,7 +32,8 @@ function register_my_menus()
     register_nav_menus(
         array(
             'menuHeader' => __('Menu Header'),
-            'menuFooter' => __('Menu Footer')
+            'menuFooter' => __('Menu Footer'),
+            'menuEstrategia' => __('Menu Estrategia'),
         )
     );
 }
