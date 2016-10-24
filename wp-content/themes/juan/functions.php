@@ -79,3 +79,85 @@ if( class_exists( 'kdMultipleFeaturedImages' ) ) {
     new kdMultipleFeaturedImages( $args );
 }
 add_theme_support('category-thumbnails');
+
+function swiper_init(){
+    $args = array(
+        'public' => true,
+        'label' => 'Sliders',
+        'supports' => array(
+            'title',
+            'thumbnail'
+        )
+    );
+    register_post_type('swiper_images', $args);
+}
+add_action('init', 'swiper_init');
+
+function swiper_register_scripts() {
+    wp_register_script('swiper-script', plugins_url('swiper/swiper.js'), array( 'jquery' ));
+    wp_register_script('main_script', plugins_url('swiper/main.js'));
+
+    wp_enqueue_script('swiper-script');
+    wp_enqueue_script('main_script');
+}
+
+function swiper_register_styles() {
+    wp_register_style('swiper_styles_theme', plugins_url('swiper/styles.css'));
+    wp_enqueue_style('swiper_styles_theme');
+}
+
+function swiper_function($slug) {
+
+    $args = [
+        'post_type' => 'swiper_images',
+    ];
+
+//    $loop = new WP_Query($args);
+//while ($loop->have_posts()) {
+//$loop->the_post();
+
+        $args = array(
+            'name'   => $slug,
+            'post_type'   => 'swiper_images',
+            'post_status' => 'publish',
+            'posts_per_page' => 1,
+        );
+
+        $gallery = get_posts($args);
+
+        var_dump($gallery);
+
+        $size = types_render_field( '', [ "url" => "true"]);
+        $urls = explode(' ', types_render_field( 'swiperoneimage', ["url" => "true"] ));
+
+        $html = count($urls) > 1
+                ? '<section class="SliderIndex">'
+                : '<section class="BannerIndex">';
+
+        $html .= '<section class="Slider-images swiper-wrapper">';
+
+        foreach($urls as $url){
+
+            $html .= '<article class="Item swiper-slide">
+                          <img src="' . $url . '" alt="">
+                      </article>';
+        }
+
+        $html .= '</section>';
+
+        if(count($urls) > 1){
+            $html .= '<div class="Slider-arrows">
+                        <span class="Arrow Arrow--prev">
+                            <img src="' . content_url('themes/juan/assets/images/arrow.svg') . '" alt="arrow">
+                        </span>
+                        <span class="Arrow Arrow--next">
+                            <img src="' . content_url('themes/juan/assets/images/arrow.svg') . '" alt="arrow">
+                        </span>
+                    </div>
+                    <div class="Slider-circles">
+                        <div class="Circles-container"></div>
+                    </div>';
+        }
+        return $html .= '</section>';
+  //  }
+}

@@ -1,0 +1,133 @@
+.SliderIndex,
+.BannerIndex{
+    max-width: 75rem;
+    height: calc(100vh - 150px);
+    max-height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.SliderIndex .Item,
+.BannerIndex .Item {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+
+.SliderIndex .Item blockquote,
+.BannerIndex .Item blockquote {
+    position: absolute;
+    left: 65%;
+    height: 100%;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.SliderIndex .Item blockquote sup,
+.BannerIndex .Item blockquote sup {
+    font-size: .6rem;
+}
+
+.Slider-arrows {
+    width: 100%;
+    margin-top: -1.5625rem;
+}
+
+.Slider-arrows .Arrow {
+    width: 3.75rem;
+    height: 3.75rem;
+    background: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    margin-top: -1.875rem;
+    opacity: .6;
+    border-radius: 50% 0 0 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.Slider-arrows .Arrow:hover {
+    opacity: 1;
+}
+
+.Slider-arrows .Arrow img {
+    width: 50%;
+    margin-left: 0.4375rem;
+    opacity: .7;
+}
+
+.Slider-arrows .Arrow--next {
+    right: -1.5625rem;
+}
+
+.Slider-arrows .Arrow--prev {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    left: -1.5625rem;
+}
+
+.Slider-circles {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    height: 1.5625rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.Slider-circles .Circles-container {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.3125rem 0.3125rem 0 0;
+    padding: 0 0.9375rem;
+    height: 100%;
+    margin: auto;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.Slider-circles .swiper-pagination-bullet {
+    width: 0.9375rem;
+    height: 0.9375rem;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 0.9375rem;
+    cursor: pointer;
+    opacity: .4;
+}
+
+.Slider-circles .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+}
+
+.Slider-circles .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border: 2px solid #000;
+    cursor: default;
+}
+
+.swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
