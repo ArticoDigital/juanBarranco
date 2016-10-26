@@ -1,7 +1,6 @@
 .idea
 wp-content/uploads
 wp-content/upload
-wp-content/plugins/types
 .DS_Store
 wp-config.php
 node_modules

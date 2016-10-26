@@ -18,4 +18,19 @@ function wp_swiper_activation_hook() {
         'gallery_id INT NOT NULL',
         'CONSTRAINT images_gallery_fk FOREIGN KEY (gallery_id) REFERENCES ' . $schema->getPrefix('sp_gallery') . ' (id)'
     ]);
+
+    for($i = 1; $i < 6; $i++){
+        $schema->insert('sp_gallery', [
+            'id' => $i,
+            'name' => 'example' . $i,
+            'slug' => 'example' . $i,
+            'updated_at' => date('Y-m-d')
+        ]);
+
+        $schema->insert('sp_images', [
+            'id' => $i,
+            'name' => plugins_url('swiper/public/images/example.png'),
+            'gallery_id' => $i
+        ]);
+    }
 }
