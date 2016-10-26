@@ -31,4 +31,6 @@ jQuery(document).ready(function() {
     $('#images_div .delete').on('click', function(){
         $(this).parent().remove();
     });
+
+    $('#images_div').sortable();
 });
