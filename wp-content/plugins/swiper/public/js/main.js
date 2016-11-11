@@ -10,11 +10,13 @@ $(document).ready(function () {
     };
 
     var small = {
+        loop: true,
+        direction: 'horizontal',
+        autoplay : '7000',
         pagination: '.Circles-container',
         nextButton: '.Arrow--next',
         prevButton: '.Arrow--prev',
         paginationClickable: true,
-        autoplay : '7000',
         slidesPerView: 5,
         spaceBetween: 50,
         breakpoints: {
