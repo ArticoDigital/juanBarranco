@@ -28,15 +28,20 @@ function swiper_options_panel() {
 add_action('admin_menu', 'swiper_options_panel');
 
 
-function swiper_function($id) {
+function swiper_function($id, $size = 'big', $text = null) {
 
     $schema = new Schema;
     $images = $schema->select('sp_images', '*', ['gallery_id' => $id]);
-
-
-    $html = count($images) > 1
-        ? '<section class="SliderIndex">'
-        : '<section class="BannerIndex">';
+    $html = '';
+    if($size == 'big'){
+        $html .= count($images) > 1
+            ? '<section class="SliderIndex">'
+            : '<section class="BannerIndex">';
+    }
+    else{
+        $html .= '<section class="SliderSmall">
+                    <h1>Casos de Éxito</h1>';
+    }
 
     $html .= '<section class="Slider-images swiper-wrapper">';
 

@@ -34,7 +34,7 @@
             <tr id="post-<?= $gallery->id ?>" class="iedit author-self level-0 post-1 type-post status-publish format-standard hentry category-sin-categoria">
                 <td class="title column-title has-row-actions column-primary page-title" data-colname="Título">
                     <strong>
-                        <a class="row-title" href="#" aria-label="“<?= $gallery->name ?>” (Editar)"><?= $gallery->name ?></a>
+                        <a class="row-title" href="admin.php?page=swiper/app/elements/edit.php&id=<?= $gallery->id ?>" aria-label="“<?= $gallery->name ?>” (Editar)"><?= $gallery->name ?></a>
                     </strong>
                 </td>
                 <td class="number-images">

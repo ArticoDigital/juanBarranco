@@ -1,32 +1,36 @@
 .SliderIndex,
+.SliderSmall,
 .BannerIndex{
     max-width: 75rem;
-    height: calc(100vh - 150px);
-    max-height: 500px;
     overflow: hidden;
     position: relative;
     margin: auto;
+}
+
+.SliderSmall{
+    padding: 40px;
+}
+
+.SliderSmall h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: #385b7c;
+    font-size: 2rem;
+}
+
+.SliderSmall .Slider-images{
+    padding: 50px 0;
+}
+
+.BannerIndex img{
+    height: 100% !important;
 }
 
 .SliderIndex .Item,
 .BannerIndex .Item {
     float: left;
     position: relative;
-    height: 100%;
-}
-
-.SliderIndex .Item blockquote,
-.BannerIndex .Item blockquote {
-    position: absolute;
-    left: 65%;
-    height: 100%;
-    font-size: 1.5rem;
-    text-align: justify;
-}
-
-.SliderIndex .Item blockquote sup,
-.BannerIndex .Item blockquote sup {
-    font-size: .6rem;
+    width: 100%;
 }
 
 .Slider-arrows {
@@ -76,6 +80,7 @@
 .Slider-circles {
     position: absolute;
     z-index: 10;
+    left: 0;
     bottom: 0;
     height: 1.5625rem;
     width: 100%;
