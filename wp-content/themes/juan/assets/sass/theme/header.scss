@@ -9,7 +9,6 @@
     align-items: center;
     padding: 0 rem(40);
   }
-
 }
 .content-menu{
   background: linear-gradient(to right, #385b7c 0%,#5992cd 50%,#385b7c 100%);
@@ -18,16 +17,20 @@
   z-index: 100;
   a{
     color: white;
-    font-size: rem(11);
+    font-size: rem(12);
     padding: rem(16) 0 rem(14)  ;
     display: block;
+    text-transform: uppercase;
   }
   li{
-    display: inline-block;
+    display: block;
     margin-right: rem(30);
     position: relative;
     &:hover .sub-menu{
       display: block;
+    }
+    @include respond-to(middle){
+      display: inline-block;
     }
   }
 }
@@ -38,6 +41,19 @@
 }
 .Header-service{
   background: white;
+  .group-h1{
+    margin: rem(40);
+    @include respond-to(middle){
+      margin: 0;
+    }
+  }
+
+}
+.Header-serviceImage{
+  display: none;
+  @include respond-to(middle){
+    display: block;
+  }
 }
 .Header-serviceContent{
   max-width: $max-width;

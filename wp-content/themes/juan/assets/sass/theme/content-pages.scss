@@ -5,17 +5,18 @@
     &:last-child {
       border-bottom: rem(1) solid white;
     }
-    &.current_page_item{
-      background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%);
-      a{
-        color:black;
+    &.current_page_item {
+      background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+      a {
+        color: black;
       }
     }
     a {
       color: white;
       display: block;
-      padding: rem(8) rem(14);
-      font-size: rem(14);
+      padding: rem(10) rem(14);
+      font-size: rem(15);
+      text-transform: uppercase;
 
     }
   }
@@ -23,16 +24,57 @@
 
 .Content-page {
   h4 {
-    font-size: rem(30);
-    font-weight: 400;
+    font-size: rem(54);
+    font-weight: 700;
     margin: rem(60) auto rem(20);
     text-align: center;
     color: white;
     text-transform: uppercase;
+    max-width: rem(400);
+    line-height: 1;
+  }
+  hr{
+    height: rem(1);
+    border: none;
+    background: #909090;
+    max-width: rem(300);
   }
 }
 
 .Entry-content {
-  background: white;
+  background: #d1d1d1;
   padding: rem(25);
+  p {
+    text-align: justify;
+    font-size: rem(17);
+    line-height: 1.5;
+    color: #505050;
+  }
+  h3{
+    display: none !important;
+  }
+}
+.Contact{
+  h2{
+    color: #1d5e80;
+    margin: rem(50) 0;
+    font-size: rem(62);
+  }
+}
+.Contact-content p{
+  color: #505050;
+}
+.tab-content{
+  span, p, div{
+    text-align: justify;
+    font-size: rem(17);
+    line-height: 1.5;
+    color: #505050;
+    font-family: Roboto,sans-serif !important;
+  }
+}
+.Entry-content #tab_container_16 .wpsm_nav-tabs > li > a{
+  color: #505050;
+  font-family: Roboto,sans-serif !important;
+
 }

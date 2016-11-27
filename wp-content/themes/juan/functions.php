@@ -34,6 +34,8 @@ function register_my_menus()
             'menuHeader' => __('Menu Header'),
             'menuFooter' => __('Menu Footer'),
             'menuEstrategia' => __('Menu Estrategia'),
+            'menuServiciosIT' => __('Menu Servicios IT'),
+            'menuServiciosProfesionales' => __('Menu Servicios Profesionales'),
         )
     );
 }

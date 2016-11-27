@@ -9,7 +9,7 @@
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,500,500i,700,700i,900,900i" rel="stylesheet">
     <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/assets/images/favicon.ico">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/normalize.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/assets/css/style.css">
@@ -22,9 +22,11 @@
 
 <body <?php body_class(); ?> data-urlBody="<?php bloginfo('url') ?>">
 <header class="Header">
-    <figure>
-        <img src=" <?php bloginfo('template_url') ?>/assets/images/logo-juanBarranco.svg" alt="">
-    </figure>
+    <a href="<?php bloginfo('url') ?>">
+        <figure>
+            <img src=" <?php bloginfo('template_url') ?>/assets/images/logo-juanBarranco.svg" alt="">
+        </figure>
+    </a>
 </header>
 <div class="content-menu center">
     <?php wp_nav_menu(array('theme_location' => 'menuHeader', 'container' => 'nav')) ?>
