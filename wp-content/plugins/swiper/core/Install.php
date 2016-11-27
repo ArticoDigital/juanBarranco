@@ -30,7 +30,7 @@ function wp_swiper_activation_hook() {
 
     $schema->create('sp_images', [
         'id INT PRIMARY KEY AUTO_INCREMENT',
-        'name VARCHAR(100) NOT NULL',
+        'name VARCHAR(500) NOT NULL',
         'gallery_id INT NOT NULL',
         'CONSTRAINT images_gallery_fk FOREIGN KEY (gallery_id) REFERENCES ' . $schema->getPrefix('sp_gallery') . ' (id)'
     ]);
