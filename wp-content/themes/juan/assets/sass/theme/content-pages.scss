@@ -24,14 +24,18 @@
 
 .Content-page {
   h4 {
-    font-size: rem(54);
+    font-size: rem(36);
     font-weight: 700;
     margin: rem(60) auto rem(20);
     text-align: center;
     color: white;
     text-transform: uppercase;
-    max-width: rem(400);
+    max-width: 100vw;
     line-height: 1;
+    @include respond-to(middle){
+      font-size: rem(54);
+      max-width: rem(400);
+    }
   }
   hr{
     height: rem(1);
@@ -58,11 +62,16 @@
   h2{
     color: #1d5e80;
     margin: rem(50) 0;
-    font-size: rem(62);
+    font-size: rem(40);
+    @include respond-to(middle){
+      font-size: rem(62);
+    }
   }
 }
 .Contact-content p{
   color: #505050;
+  padding: 0 rem(10);
+  word-break: break-all;
 }
 .tab-content{
   span, p, div{

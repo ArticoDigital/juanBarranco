@@ -10,76 +10,162 @@
     padding: 0 rem(40);
   }
 }
-.content-menu{
-  background: linear-gradient(to right, #385b7c 0%,#5992cd 50%,#385b7c 100%);
+
+.content-menu.show {
+  @include transform(translateX(0));
+}
+
+.content-menu {
+  background: #5992cd;
   box-shadow: 0 rem(3) rem(6) rgba(0, 0, 0, 0.7);
-  position: relative;
   z-index: 100;
-  a{
+  position: fixed;
+  top: 0;
+  max-width: calc(100vw - 56px);
+  @include transform(translateX(-100vw));
+  @include transition(all .4s);
+  @include respond-to(middle) {
+    background: linear-gradient(to right, #385b7c 0%, #5992cd 50%, #385b7c 100%);
+    position: relative;
+    max-width: 100vw;
+  }
+
+  a {
     color: white;
     font-size: rem(12);
-    padding: rem(16) 0 rem(14)  ;
+    padding: rem(16) 0 rem(14);
     display: block;
     text-transform: uppercase;
   }
-  li{
+  li {
     display: block;
-    margin-right: rem(30);
     position: relative;
-    &:hover .sub-menu{
+
+    &:hover .sub-menu {
       display: block;
     }
-    @include respond-to(middle){
+    @include respond-to(middle) {
       display: inline-block;
+      margin: 0 rem(30) 0 0;
     }
   }
 }
-.menu{
-  max-width: $max-width;
-  margin: auto;
 
+.menu {
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+
+  @include respond-to(middle) {
+    max-width: $max-width;
+  }
 }
-.Header-service{
+
+.Header-service {
   background: white;
-  .group-h1{
+  .group-h1 {
     margin: rem(40);
-    @include respond-to(middle){
+    @include respond-to(middle) {
       margin: 0;
     }
   }
 
 }
-.Header-serviceImage{
+
+.Header-serviceImage {
   display: none;
-  @include respond-to(middle){
+  @include respond-to(middle) {
     display: block;
   }
 }
-.Header-serviceContent{
+
+.Header-serviceContent {
   max-width: $max-width;
   margin: auto;
-  h1{
+  h1 {
     color: #395B7D;
-    span{
+    span {
       display: block;
     }
   }
-  figure img{
+  p{
+    max-width: 80%;
+    margin: auto;
+  }
+  figure img {
     max-width: rem(350);
   }
 }
 
-.sub-menu{
+.sub-menu {
   display: none;
-  position: absolute;
-  top:rem(42);
-  li{
-    width: rem(168);
-    background: linear-gradient(to bottom, #ffffff 0%,#cccccc 100%);
+  position: static;
+  top: rem(42);
+  @include respond-to(middle) {
+    position: absolute;
   }
-  a{
+  li {
+    width: auto;
+    background: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%);
+    @include respond-to(middle) {
+      width: rem(170);
+    }
+  }
+  a {
     color: black;
     padding: rem(12) rem(7);
     display: block
   }
 }
+
+.menu-navButtonContent {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  max-width: calc(100vw - 6px);
+  z-index: 2;
+  width: rem(350);
+  cursor: pointer;
+
+  @include respond-to(middle) {
+    display: block;
+  }
+}
+
+.menu-navButton {
+  width: rem(50);
+  display: inline-block;
+  background: #5992cd;
+  padding: rem(2) rem(5) rem(3);
+  span {
+    max-width: 90%;
+    margin: rem(6) auto;
+    height: rem(4);
+    padding: 0 10px;
+    display: block;
+    background: white;
+  }
+}
+
+.Header-serviceContent h1 span {
+  &:first-child {
+    font-size: 44px !important;
+    line-height: 52px !important;
+    @include respond-to(middle) {
+      font-size: 54px !important;
+      line-height: 62px !important;
+    }
+  }
+  &:last-child {
+    font-size: 34px !important;
+    line-height: 45px !important;
+    @include respond-to(middle) {
+      font-size: 46px !important;
+      line-height: 45px !important;
+    }
+  }
+}
+
+
+

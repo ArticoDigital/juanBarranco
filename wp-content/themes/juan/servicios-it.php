@@ -6,7 +6,7 @@ Template Name: SERVICIOS IT
 <?php get_header(); ?>
 <header class="Header-service ">
     <div class=" Header-serviceContent row middle center">
-        <div class="group-h1 col-6">
+        <div class="group-h1 col-6 cols-12">
             <h1>
                 <span style="font-size: 25px; line-height: 45px;">¿QUÉ PROFESIONAL LE ENTREGA</span>
                 <span style="font-size: 58px; line-height: 45px;">SERVICIOS IT?</span>

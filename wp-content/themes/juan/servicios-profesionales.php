@@ -6,7 +6,7 @@ Template Name: Servicios Profesionales
 <?php get_header(); ?>
 <header class="Header-service " style="background: none">
     <div class=" Header-serviceContent row middle center">
-        <div class="group-h1 col-6">
+        <div class="group-h1 col-6 cols-12">
             <h1>
                 <span style="font-size: 73px; line-height: 62px;">SERVICIOS</span>
                 <span style="font-size: 46px; line-height: 45px;">PROFESIONALES</span>
