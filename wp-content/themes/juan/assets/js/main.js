@@ -1,7 +1,5 @@
-
-$('#MenuNav').on('click',function(){
-        console.log('ddd')
-        $('.content-menu').toggleClass('show')
-
-
+$('#MenuNav').on('click', function () {
+    $('.content-menu').toggleClass('show');
+    $('.menu-navButtonContent').toggleClass('show');
+    console.log('adsasd')
 });
