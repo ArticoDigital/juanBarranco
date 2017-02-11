@@ -36,7 +36,10 @@
     </div>
 
 </div>
-<ul class="flags-languages"><?php pll_the_languages();?></ul>
+
+<?php widgetFlags(); ?>
+
+
 <div class="content-menu center">
     <?php wp_nav_menu(array('theme_location' => 'menuHeader', 'container' => 'nav')) ?>
 </div>
