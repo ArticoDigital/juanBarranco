@@ -39,8 +39,8 @@
 
     <div class="widgetFlags" role="complementary">
         <?php dynamic_sidebar( 'widgetFlags' ); ?>
+    </div><!-- #primary-sidebar -->
 
-<?php endif; ?>
 
 
 
