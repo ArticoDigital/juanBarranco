@@ -44,8 +44,8 @@ add_action('widgets_init', 'widgetFlags');
 function widgetFlags(){
     register_sidebar(
         array(
-            'id' => 'widgetSearch', /* ID unique*/
-            'name' => 'widgetSearch',
+            'id' => 'widgetFlags', /* ID unique*/
+            'name' => 'widgetFlags',
             'description' => 'widget',
             'before_widget' => '<ul class "Flags">',
             'after_widget' => '</div>',
