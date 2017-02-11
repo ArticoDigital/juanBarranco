@@ -36,8 +36,12 @@
     </div>
 
 </div>
+<?php if ( is_active_sidebar( 'widgetFlags' ) ) : ?>
+    <div class="widgetFlags" role="complementary">
+        <?php dynamic_sidebar( 'widgetFlags' ); ?>
+    </div><!-- #primary-sidebar -->
+<?php endif; ?>
 
-<?php widgetFlags(); ?>
 
 
 <div class="content-menu center">
