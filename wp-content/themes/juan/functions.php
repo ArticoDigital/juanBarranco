@@ -39,7 +39,21 @@ function register_my_menus()
         )
     );
 }
-
+/* Add Space Search Widget */
+add_action('widgets_init', 'widgetFlags');
+function widgetFlags(){
+    register_sidebar(
+        array(
+            'id' => 'widgetSearch', /* ID unique*/
+            'name' => 'widgetSearch',
+            'description' => 'widget',
+            'before_widget' => '<ul class "Flags">',
+            'after_widget' => '</div>',
+            'before_title' => '<strong>',
+            'after_title' => '</strong>',
+        )
+    );
+}
 /* Add Space Search Widget */
 add_action('widgets_init', 'widgetSearchFooter');
 function widgetSearchFooter(){
