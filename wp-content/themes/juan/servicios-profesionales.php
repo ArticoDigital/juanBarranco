@@ -8,14 +8,11 @@ Template Name: Servicios Profesionales
     <div class=" Header-serviceContent row middle center">
         <div class="group-h1 col-6 cols-12">
             <h1>
-                <span style="font-size: 73px; line-height: 62px;">SERVICIOS</span>
-                <span style="font-size: 46px; line-height: 45px;">PROFESIONALES</span>
+                <span style="font-size: 73px; line-height: 62px;"><?php _e('SERVICES', 'luker'); ?></span>
+                <span style="font-size: 46px; line-height: 45px;"><?php _e('PROFESSIONALS', 'luker'); ?></span>
             </h1>
             <p style=" margin: 0 auto;width: 353px; font-size: 12px;">
-                Servicios orientados al fortalecimiento de los procesos, productos
-                y servicios del área de TI, para el incremento de la eficiencia de la
-                organización y el apoyo a la obtención de resultados estratégicos
-                de la compañía y de tecnologías de información.
+                <?php _e('Services aimed at strengthening processes, products and services in the IT area, for increasing the efficiency of the organization and support to obtain strategic results of the company and information technology.', 'luker'); ?>
             </p>
         </div>
         <figure class="col-6 row center Header-serviceImage" >
