@@ -186,4 +186,9 @@
 }
 
 
-
+.Contact-form{
+  input, textarea{
+    max-width: 100%;
+    border: none
+  }
+}
