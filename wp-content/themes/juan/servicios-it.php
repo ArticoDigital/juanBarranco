@@ -8,8 +8,8 @@ Template Name: SERVICIOS IT
     <div class=" Header-serviceContent row middle center">
         <div class="group-h1 col-6 cols-12">
             <h1>
-                <span style="font-size: 25px; line-height: 45px;">¿QUÉ PROFESIONAL LE ENTREGA</span>
-                <span style="font-size: 58px; line-height: 45px;">SERVICIOS IT?</span>
+                <span style="font-size: 25px; line-height: 45px;"><?php _e('¿WHAT PROFESSIONAL DOES IT DELIVER YOU', 'luker'); ?></span>
+                <span style="font-size: 58px; line-height: 45px;"><?php _e('SERVICES IT?', 'luker'); ?></span>
             </h1>
         </div>
         <figure class="col-6 row center Header-serviceImage" style="height: 200px">
