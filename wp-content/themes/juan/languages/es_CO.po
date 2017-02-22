@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Twenty Fifteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2017-02-20 13:03-0500\n"
+"PO-Revision-Date: 2017-02-19 17:45-0500\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,6 +25,7 @@ msgstr "SERVICIOS"
 
 msgid "PROFESSIONALS"
 msgstr "PROFESIONALES"
+
 
 msgid "Services aimed at strengthening processes, products and services in the IT area, for increasing the efficiency of the organization and support to obtain strategic results of the company and information technology."
 msgstr "Servicios orientados al fortalecimiento de los procesos, productos y servicios del área de TI, para el incremento de la eficiencia de la organización y el apoyo a la obtención de resultados estratégicos de la compañía y de tecnologías de información."
