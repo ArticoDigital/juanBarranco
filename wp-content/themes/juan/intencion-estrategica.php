@@ -31,7 +31,7 @@ while (have_posts()) : the_post(); ?>
         </div>
         <div class="Content-page col-9 cols-12 row stretch">
             <div class="col-12" style="margin: auto ;background-image: url(<?php
-            the_post_thumbnail('large');
+            the_post_thumbnail_url('large');
             ?>);
     background-size: cover;">
                 <h4><?php the_title()?></h4>
