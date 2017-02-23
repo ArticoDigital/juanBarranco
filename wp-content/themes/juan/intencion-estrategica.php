@@ -6,7 +6,7 @@ Template Name: INTENCIÓN ESTRATÉGICA PROFESIONAL
 <?php get_header(); ?>
 <header class="Header-service ">
     <div class=" Header-serviceContent row middle center">
-        <div class="group-h1 col-6 cols-12">
+        <div class="group-h1 col-6 cols-12" >
             <h1>
                 <span style="font-size: 52px; line-height: 45px;">INTENCIÓN</span>
                 <span style="font-size: 40px; line-height: 45px;">ESTRATÉGICA</span>
@@ -30,7 +30,10 @@ while (have_posts()) : the_post(); ?>
             <?php wp_nav_menu(array('theme_location' => 'menuEstrategia')) ?>
         </div>
         <div class="Content-page col-9 cols-12 row stretch">
-            <div class="col-12" style="margin: auto">
+            <div class="col-12" style="margin: auto ;background-image: url(<?php
+            the_post_thumbnail('large');
+            ?>);
+    background-size: cover;">
                 <h4><?php the_title()?></h4>
             </div>
             <div class="Entry-content col-12 cols-12">
