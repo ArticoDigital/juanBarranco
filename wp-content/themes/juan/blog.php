@@ -15,7 +15,7 @@ $my_query = new WP_Query('category_name=blog&showposts=100'); ?>
                 <h2><?php the_title() ?></h2>
                 <?php the_excerpt() ?>
             </div>
-            <figure class="col-3">
+            <figure class="col-3 cols-12">
                 <?php the_post_thumbnail(); ?>
             </figure>
         </article>
