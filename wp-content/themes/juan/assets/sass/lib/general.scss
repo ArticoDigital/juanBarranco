@@ -58,6 +58,7 @@ button{
 }
 #blog{
   margin: rem(40) auto;
+  padding: 0 rem(20);
   h2{
     color: #385b7c;
     text-transform: capitalize;
@@ -80,11 +81,13 @@ button{
     line-height: 1.58;
     letter-spacing: -.004em;
     margin: rem(10) 0 0;
+    padding-right: rem(24)
   }
 }
 .Single{
   max-width: rem(900);
   margin: rem(40) auto;
+  padding: 0 rem(20);
   h1{
     color: #385b7c;
     text-transform: capitalize;

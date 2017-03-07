@@ -10,8 +10,8 @@ $my_query = new WP_Query('category_name=blog&showposts=100'); ?>
 <section class="row Half center stretch" id="blog">
     <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-        <article class="col-7 row start">
-            <div class="col-9 ">
+        <article class="col-7 cols-12  row start">
+            <div class="col-9 cols-12">
                 <h2><?php the_title() ?></h2>
                 <?php the_excerpt() ?>
             </div>

@@ -6,9 +6,10 @@
         <h1><?php the_title() ?></h1>
 
         <article>
-            <figure class="col-12" style="
+            <figure class="col-12 " style="
                     background-image: url(' <?php echo get_the_post_thumbnail_url(); ?>'); height: 300px;
-                    background-size: contain;">
+                    background-size: contain;
+                   ">
 
             </figure>
             <?php the_content() ?>
