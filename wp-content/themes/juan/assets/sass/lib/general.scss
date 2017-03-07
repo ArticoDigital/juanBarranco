@@ -46,7 +46,6 @@ blockquote,
 blockquote p {
   margin: 0
 }
-
 main{
   margin: auto;
   width: 100%;
@@ -56,4 +55,47 @@ main{
 button{
   background: none;
   border: none
+}
+#blog{
+  margin: rem(40) auto;
+  h2{
+    color: #385b7c;
+    text-transform: capitalize;
+  }
+  article{
+    margin-bottom: rem(20);
+    background: #d2d2d2;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0,0,0,.09);
+    padding: rem(20);
+  }
+  a{
+    display: block;
+    margin-top: rem(20);
+    font-size: rem(14);
+    color: rgb(56, 91, 124);
+  }
+  p{
+    font-size: rem(18);
+    line-height: 1.58;
+    letter-spacing: -.004em;
+    margin: rem(10) 0 0;
+  }
+}
+.Single{
+  max-width: rem(900);
+  margin: rem(40) auto;
+  h1{
+    color: #385b7c;
+    text-transform: capitalize;
+    margin: 10px 0;
+  }
+  p{
+    font-weight: 400;
+    font-style: normal;
+    font-size: rem(20temi);
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: #2b2b2b;
+  }
 }

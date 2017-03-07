@@ -91,6 +91,9 @@ class wpsm_tabs_r {
 	public function wpsm_tabs_r_meta_boxes_group(){
 		add_meta_box('tabs_r_add', __('Add Tabs Panel', wpshopmart_tabs_r_text_domain), array(&$this, 'wpsm_add_tabs_r_meta_box_function'), 'tabs_responsive', 'normal', 'low' );
 		add_meta_box ('tabs_r_shortcode', __('Tabs Shortcode', wpshopmart_tabs_r_text_domain), array(&$this, 'wpsm_pic_tabs_r_shortcode'), 'tabs_responsive', 'normal', 'low');
+		add_meta_box ('tabs_r_more_pro', __('More Pro Plugin From Wpshopmart', wpshopmart_tabs_r_text_domain), array(&$this, 'wpsm_tabs_r_pic_more_pro'), 'tabs_responsive', 'normal', 'low');
+		
+		add_meta_box('tabs_r_donate', __('Donate Us', wpshopmart_tabs_r_text_domain), array(&$this, 'wpsm_tabs_r_donate_meta_box_function'), 'tabs_responsive', 'side', 'low');
 		add_meta_box('tabs_r_rateus', __('Rate Us If You Like This Plugin', wpshopmart_tabs_r_text_domain), array(&$this, 'wpsm_tabs_r_rateus_meta_box_function'), 'tabs_responsive', 'side', 'low');
 		add_meta_box('tabs_r_setting', __('Tabs Settings', wpshopmart_tabs_r_text_domain), array(&$this, 'wpsm_add_tabs_r_setting_meta_box_function'), 'tabs_responsive', 'side', 'low');
 	}
@@ -161,18 +164,49 @@ class wpsm_tabs_r {
 		<?php 
 	}
 	
+	public function wpsm_tabs_r_donate_meta_box_function(){ 
+	?>
+	<style>
+			#tabs_r_donate{
+			background:transparent;
+			text-align:center;
+			box-shadow:none;
+			}
+			#tabs_r_donate .hndle , #tabs_r_donate .handlediv{
+			display:none;
+			}
+			
+			a, a:focus{
+				box-shadow:none;
+				text-decoration:none;
+			}
+			#tabs_r_donate h3 {
+			margin-bottom:0;
+			margin-top:3px;
+			padding:0px;
+			}
+			
+			</style>
+			<a href="http://wpshopmart.com/members/signup/tabs-responsive-donation" target="_blank" >
+			<img src="<?php echo wpshopmart_tabs_r_directory_url.'assets/images/donate-1.jpg'; ?>" style="width:100%;height:auto"/>
+			<h3> We Need Your Support</h3>
+			<img src="<?php echo wpshopmart_tabs_r_directory_url.'assets/images/donate-button.png'; ?>" style="width:100%;height:auto"/>
+			</a>
+			<?php 
+	}
 	public function wpsm_tabs_r_rateus_meta_box_function(){
 		?>
 		<style>
 		#tabs_r_rateus{
-			background:url(<?php echo wpshopmart_tabs_r_directory_url.'assets/images/rate-bg.jpg'; ?>)!important;
+			background:#31a3dd;
+			text-align:center;
 			}
 			#tabs_r_rateus .hndle , #tabs_r_rateus .handlediv{
 			display:none;
 			}
 			#tabs_r_rateus h1{
 			color:#fff;
-			
+			margin-bottom:10px;
 			}
 			 #tabs_r_rateus h3 {
 			color:#fff;
@@ -190,17 +224,16 @@ class wpsm_tabs_r {
 				width: 40px;
 				height: 40px;
 				font-size:20px;
-				color : #EAC121 !important;
+				color : #fff !important;
 			}
 			.wpsm-rate-us span.dashicons-star-filled:before {
 				content: "\f155";
 				font-size: 40px;
 			}
 		</style>
-		   <h1>Rate Us </h1>
-			<h3>Show us some love, If you like our product then please give us some valuable feedback on wordpress</h3>
-			<a href="https://wordpress.org/plugins/colorbox-panels/" target="_blank" class="button button-primary button-hero ">RATE HERE</a>
-			<a class="wpsm-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="https://wordpress.org/plugins/responsive-accordion-and-collapse/" target="_blank">
+		   <h1>Rate This plugin</h1>
+			<a href="https://wordpress.org/support/plugin/tabs-responsive/reviews/?filter=5" target="_blank" class="button button-primary button-hero ">RATE HERE</a>
+			<a class="wpsm-rate-us" style=" text-decoration: none; height: 40px; width: 40px;" href="https://wordpress.org/support/plugin/tabs-responsive/reviews/?filter=5" target="_blank">
 				<span class="dashicons dashicons-star-filled"></span>
 				<span class="dashicons dashicons-star-filled"></span>
 				<span class="dashicons dashicons-star-filled"></span>
@@ -222,6 +255,9 @@ class wpsm_tabs_r {
 		require('data-post/tabs-settings-save-data.php');
 	}
 	
+	public function wpsm_tabs_r_pic_more_pro(){
+		require_once('more-pro.php');
+	}
 	
 }
 global $wpsm_tabs_r;

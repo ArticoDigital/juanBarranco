@@ -1,10 +1,10 @@
 === Tabs Responsive ===
 Contributors: wpshopmart
-Donate link: http://www.wpshopmart.com
+Donate link: http://wpshopmart.com/members/signup/tabs-responsive-donation
 Tags: tab, tabs, responsive tabs, animation, animated tab, css3 tabs, bootstrap tabs, tabs content, responsive, shortcode, widget, wordpress tabs, wp tabs, accordion, collapse, toggle, bootstrap tab, jquery, tab widget, tab shortcode, jquery tabs, sidebar, plugin, html, html5, html5 tabs
 Requires at least: 3.3
-Tested up to: 4.6.1
-Stable tag: 1.6.4
+Tested up to: 4.7.2
+Stable tag: 1.6.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -108,6 +108,18 @@ Please use WordPress support forum to ask any query regarding any issue.
 
 
 == Changelog ==
+
+= 1.6.8 =
+* update review link
+
+= 1.6.7 =
+* Minor Bug Resolved
+
+= 1.6.6 =
+* Add donation link
+
+= 1.6.5 =
+* Compatible with wordpress 4.7 version
 
 = 1.6.4 =
 * Minor Bug reserved 
