@@ -25,7 +25,7 @@ $my_query = new WP_Query('category_name=corporate-governance-it&showposts=100');
     </section>
     <aside class=" col-3">
         <div class="Content-aside">
-            <h3>all ites</h3>
+            <h3>all items</h3>
             <?php $my_query1 = new WP_Query('category_name=corporate-governance-it&showposts=100'); ?>
             <?php while ($my_query1->have_posts()) : $my_query1->the_post(); ?>
                 <ul>
